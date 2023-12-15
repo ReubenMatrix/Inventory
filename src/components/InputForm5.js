@@ -13,8 +13,6 @@ function InputForm5() {
   }, [darkMode]);
 
   const handleSaveButtonClick = () => {
-    // Perform any save logic here
-    // For demonstration purposes, let's just toggle the state to show/hide the new container
 
     setShowNewContainer(!showNewContainer);
   };
@@ -25,7 +23,7 @@ function InputForm5() {
         <div className="flex flex-col items-start justify-start w-[200px] h-[105px] overflow-hidden">
           <div className={`mb-2 ${darkMode ? 'text-white' : 'text-black'}`}>Tax</div>
           <select
-            className="[outline:none] bg-white text-xl rounded-md box-border w-full h-[62px] overflow-hidden border-[1px] border-solid border-black"
+            className={`${darkMode ? 'bg-gray-200' : 'bg-white'} [outline:none]  text-xl rounded-md box-border w-full h-[62px] overflow-hidden border-[1px] border-solid border-black`}
             name="code"
             id="input"
             value={frameInput7Value}
@@ -40,7 +38,7 @@ function InputForm5() {
 
         <div className="flex gap-4 items-end">
           <button
-            className="cursor-pointer p-0 bg-black rounded-[5px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[127px] h-[52px] overflow-hidden border-[1px] border-solid border-teal-400 flex items-center justify-center"
+            className="cursor-pointer p-0 bg-black border-white rounded-[5px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[127px] h-[52px] overflow-hidden border-[1px] border-solid border-teal-400 flex items-center justify-center"
 
             autoFocus={true}
             id="filterbut"
@@ -49,7 +47,7 @@ function InputForm5() {
           </button>
 
           <button
-            className="cursor-pointer p-0 bg-teal rounded-[5px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[127px] h-[52px] overflow-hidden border-[1px] border-solid border-teal-400 flex items-center justify-center"
+            className="cursor-pointer p-0 bg-[#38B1BD]  rounded-[5px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[127px] h-[52px] overflow-hidden border-[1px] border-solid border-teal-400 flex items-center justify-center"
             onClick={handleSaveButtonClick}
             autoFocus={true}
             id="filterbut"
@@ -61,7 +59,7 @@ function InputForm5() {
 
         {showNewContainer && (
           <section
-            className="absolute top-[150px] left-[0px] w-[1148px] h-[1000px] overflow-hidden text-left text-xl text-black font-inter"
+            className="absolute top-[150px] left-[0px] w-[1148px] h-[1050px] overflow-hidden text-left text-xl text-black font-inter"
             id="input"
           >
             <InputForm7 />

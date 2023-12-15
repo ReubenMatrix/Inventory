@@ -11,7 +11,7 @@ function Additemnavbar() {
   
   return (
  
-      <nav className= {`${darkMode ? 'bg-black' : 'bg-lightcyan'}  absolute w-full h-[2010px] overflow-hidden text-left text-sm text-black font-inter`}>
+      <nav className= {`${darkMode ? 'bg-[#201F1F]' : 'bg-lightcyan'}  absolute w-full h-[2010px] overflow-hidden text-left text-sm text-black font-inter`}>
           <section className={`${darkMode ? 'bg-black border-white' : 'bg-white border-black'} absolute top-[91px] left-[0px]  box-border w-full h-[63px] overflow-hidden text-left text-lg text-black font-inter border-t-[1px] border-solid border-b-[1px]`}>
               <div className={`absolute top-5 left-40 ${darkMode ? 'bg-black' : 'bg-white'} box-border w-1440 h-70 overflow-hidden  flex items-center`}>
                   <div className="w-[153px] h-6  text-teal flex items-center">

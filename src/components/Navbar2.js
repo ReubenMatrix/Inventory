@@ -19,7 +19,7 @@ function Navbar2() {
   };
 
   return (
-    <nav className={`relative ${darkMode ? 'bg-black' : 'bg-lightcyan'} w-full h-[1024px] overflow-hidden text-left text-sm text-black font-inter`}>
+    <nav className={`relative ${darkMode ? 'bg-[#201F1F]' : 'bg-lightcyan'} w-full h-[1024px] overflow-hidden text-left text-sm text-black font-inter`}>
         <section className={`absolute top-[91px] left-[0px] ${darkMode ? 'bg-black border-white' : 'bg-white border-black'} box-border w-full h-[63px] overflow-hidden text-left text-lg text-white font-inter border-t-[1px] border-solid border-b-[1px]`}> 
         <button className="flex items-center justify-center absolute top-[5px] left-[769px] rounded-3xs bg-[#14ACC7] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-[156px] h-[50px] overflow-hidden opacity-[0.9] text-xl cursor-pointer">
           <div className="font-semibold text-white" onClick={handleButtonClick}>

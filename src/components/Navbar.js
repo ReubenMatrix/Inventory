@@ -14,8 +14,6 @@ function Navbar() {
     setDarkMode(!darkMode);
   };
 
- 
-
   const navigate = useNavigate();
   const handleButtonClick = () => {
     console.log("Button clicked!");
@@ -23,7 +21,7 @@ function Navbar() {
   };
 
   return (
-    <nav className={`relative ${darkMode ? 'bg-black' : 'bg-lightcyan'} w-full h-[1024px] overflow-hidden text-left text-sm text-black font-inter`}>
+    <nav className={`relative ${darkMode ? 'bg-[#201F1F]' : 'bg-lightcyan'} w-full h-[1024px] overflow-hidden text-left text-sm text-black font-inter`}>
       <button className="absolute top-2 right-2 p-2 rounded-md bg-gray-300 hover:bg-gray-400"
         onClick={handleToggleDarkMode}
       >

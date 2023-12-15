@@ -40,10 +40,10 @@ function InputForm6() {
               </select>
           </div>
 
-          <div className="flex flex-col items-start justify-start w-[409px] h-[310px] overflow-hidden">
-              <div className={`mb-2 ${darkMode ? 'text-white' : 'text-black'}`}>Instructions</div>
+          <div className="flex flex-col items-end justify-start w-[409px] h-[310px] overflow-hidden">
+              <div className={`items-start mb-2 ${darkMode ? 'text-white' : 'text-black'}`}>Instructions</div>
               <textarea
-                  className="[outline:none] bg-white text-xl  box-border w-full h-[900px]  border-[1px] border-solid border-black"
+                  className="[outline:none] bg-white text-xl  box-border w-full h-[830px]  border-[1px] border-solid border-black"
                   name="code"
                   id="input"
                   type="text"
@@ -51,25 +51,36 @@ function InputForm6() {
                   onChange={(event) => setFrameInput1Value(event.target.value)}
               />
 
-              <div className="flex gap-4 items-end mt-5">
-                  <div className="flex flex-col items-start justify-start w-[105px] h-[105px] overflow-hidden"></div>
+
+              <div className="flex flex-col items-center gap-4 mt-10">
+                  <div className="flex gap-4 justify-end items-end">
+                      <button
+                          className="cursor-pointer p-0 bg-black border-white rounded-[5px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[127px] h-[52px] overflow-hidden border-[1px] border-solid border-teal-400 flex items-center justify-center"
+
+                          autoFocus={true}
+                          id="filterbut"
+                      >
+                          <div className="text-xl font-inter text-white">Cancel</div>
+                      </button>
+
+                      <button
+                          className="cursor-pointer p-0 bg-[#38B1BD]  rounded-[5px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[127px] h-[52px] overflow-hidden border-[1px] border-solid border-teal-400 flex items-center justify-center"
+
+                          autoFocus={true}
+                          id="filterbut"
+                      >
+                          <div className="text-xl font-inter text-white">Save</div>
+                      </button>
+                  </div>
+
 
                   <button
-                      className="cursor-pointer p-0 bg-black rounded-[5px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[127px] h-[52px] overflow-hidden border-[1px] border-solid border-teal-400 flex items-center justify-center"
-
+                      className="cursor-pointer p-0 bg-black border-white rounded-[5px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[127px] h-[52px] overflow-hidden border-[1px] border-solid border-teal-400 flex items-center justify-center"
                       autoFocus={true}
+                      onClick={handleButtonClick}
                       id="filterbut"
                   >
-                      <div className="text-xl font-inter text-white">Cancel</div>
-                  </button>
-
-                  <button
-                      className="cursor-pointer p-0 bg-teal rounded-[5px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[127px] h-[52px] overflow-hidden border-[1px] border-solid border-teal-400 flex items-center justify-center"
-
-                      autoFocus={true}
-                      id="filterbut"
-                  >
-                      <div className="text-xl font-inter text-white" onClick={handleButtonClick}>Save</div>
+                      <div className="text-xl font-inter text-white">Next</div>
                   </button>
               </div>
           </div>

@@ -11,16 +11,14 @@ function InputForm2() {
     
   return (
       <div className="flex items-start  justify-between w-[1148px] h-[105px] overflow-hidden mb-8">
-
           <div className="flex flex-col  w-[780px] h-[120px] overflow-hidden relative">
-          <div className={` ${darkMode ? 'text-white' : 'text-black'} text-lg font-inter mb-2`}>
-           
+              <div className={` ${darkMode ? 'text-white' : 'text-black'} text-lg font-inter mb-2`}>
                   Manufacturer
               </div>
 
               <div className="flex items-center w-[780px] h-[62px] overflow-hidden">
                   <input
-                      className="outline-none bg-white text-xl rounded-tl-md rounded-tr-none rounded-br-none rounded-bl-md box-border w-[409px] h-[62px] overflow-hidden border-[1px] border-solid border-black ml-0"
+                      className={`${darkMode ? 'bg-gray-200' : 'bg-white'} outline-none bg-white text-xl rounded-tl-md rounded-tr-none rounded-br-none rounded-bl-md box-border w-[409px] h-[62px] overflow-hidden border-[1px] border-solid border-black ml-0`}
                       name="manufacture"
                       id="input"
                       type="text"
@@ -29,7 +27,7 @@ function InputForm2() {
                   />
 
                   <button
-                      className="cursor-pointer p-0  bg-teal rounded-[5px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[250px] h-[60px] overflow-hidden border-[1px] border-solid border-teal-400 flex items-center justify-center"
+                      className="cursor-pointer p-0  bg-[#38B1BD]  rounded-[5px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] box-border w-[250px] h-[60px] overflow-hidden border-[1px] border-solid border-teal-400 flex items-center justify-center"
                       autoFocus={true}
                       id="filterbut"
                   >
@@ -49,8 +47,6 @@ function InputForm2() {
                   </button>
               </div>
           </div>
-
-
       </div>
 
 

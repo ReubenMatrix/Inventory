@@ -14,7 +14,7 @@ function InputForm3() {
           <div className="flex flex-col items-start justify-start w-[409px] h-[105px] overflow-hidden">
               <div className={`mb-2 ${darkMode ? 'text-white' : 'text-black'}`}>Stocking Unit</div>
               <input
-                  className="[outline:none] bg-white text-xl rounded-md box-border w-full h-[62px] overflow-hidden border-[1px] border-solid border-black"
+                  className={`${darkMode ? 'bg-gray-200' : 'bg-white'} [outline:none] text-xl rounded-md box-border w-full h-[62px] overflow-hidden border-[1px] border-solid border-black`}
                   name="name"
                   id="input"
                   type="text"
@@ -27,7 +27,7 @@ function InputForm3() {
           <div className="flex flex-col  items-start justify-start w-[409px] h-[105px] overflow-hidden">
               <div className={`mb-2 ${darkMode ? 'text-white' : 'text-black'}`}>Re-Order Level</div>
               <input
-                  className="[outline:none] bg-white text-xl rounded-md box-border w-full h-[62px] overflow-hidden border-[1px] border-solid border-black"
+                  className={`${darkMode ? 'bg-gray-200' : 'bg-white'} [outline:none] text-xl rounded-md box-border w-full h-[62px] overflow-hidden border-[1px] border-solid border-black`}
                   name="code"
                   id="input"
                   type="text"
