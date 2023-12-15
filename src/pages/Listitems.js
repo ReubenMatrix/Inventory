@@ -25,7 +25,7 @@ function Listitems() {
       </section>
 
       <section
-        className="absolute  top-[730px] left-[132px] w-[1148px] h-[381px] overflow-hidden text-left text-xl text-black font-inter"
+        className="absolute  top-[730px] left-[132px] w-[1148px] h-[390px] overflow-hidden text-left text-xl text-black font-inter"
         id="input"
       >
         <Footerbuttons />
