@@ -10,7 +10,7 @@ import InputForm from '../components/InputForm'
 
 function Additems() {
   return (
-    <div className="container bg-lightcyan ">
+    <main className="relative bg-lightcyan  w-full h-[1200px] text-left text-sm text-black font-inter">
       <Additemnavbar />
       <section
         className="absolute top-[20px]  left-[0px] w-[1148px] h-[381px] overflow-hidden text-left text-xl text-black font-inter"
@@ -52,9 +52,9 @@ function Additems() {
       >
         <InputForm5 />
       </section> 
+</main>
 
-
-    </div>
+    
 
   )
 }

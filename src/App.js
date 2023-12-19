@@ -8,6 +8,10 @@ import {
 import Inventory from "./pages/Inventory";
 import Additems from "./pages/Additems";
 import Listitems from "./pages/Listitems";
+import Profile from "./pages/Profile";
+import Subscription from "./pages/Subscription";
+import AccountSettings from "./pages/AccountSettings";
+import Editprofile from "./pages/Editprofile";
 
 function App() {
   const action = useNavigationType();
@@ -64,6 +68,10 @@ function App() {
       <Route path="/" element={<Inventory />} />
       <Route path="/additem" element={<Additems />} />
       <Route path="/listitems" element={<Listitems />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/subscription" element={<Subscription />} />
+      <Route path="/settings" element={<AccountSettings />} />
+      <Route path="/edit" element={<Editprofile />} />
     </Routes>
   );
 }
